@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  <style>
+    .letra {
+      width: 16px;
+      height: 16px;
+      line-height: 1em;
+      text-align: center;
+      border-bottom: 2px solid black;
+    }
+
+    .container-da-palavra {
+      margin-bottom: 10px;
+      display: flex;
+      align-content: flex-end;
+      gap: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jogo da Forca</h1>
+  <p id="tentativas-restantes" class="tentativas-restantes"></p>
+  <p class="letras-erradas"></p>
+
+  <div class="container-da-palavra">
+    <div class="letra"></div>
+
+  </div>
+
+  <input type="text" name="palpite" id="palpite" placeholder="Insira seu palpite" />
+  <button id="enviar-palpite">Enviar</button>
+  <button id="resetar">Reiniciar</button>
+</body>
+<script src="main.js" type="module"></script>
+</html>

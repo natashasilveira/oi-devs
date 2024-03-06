@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.circuloVermelho {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.circuloAzul {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+section {
+  background-color: lightgray;
+}
+section div {
+  background-color: red;
+}
+
+.banana {
+  height: 100px;
+  background-color: aquamarine;
+}
+.banana a {
+  text-decoration: none;
+}
+.banana a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+section[id] {
+  border-bottom: 3px solid orange;
+  height: 100vh;
+}
+section[id]:nth-child(odd) {
+  background-color: bisque;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  background-color: lightcoral;
+  padding: 5px;
+  color: #fff;
+  left: 0;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */

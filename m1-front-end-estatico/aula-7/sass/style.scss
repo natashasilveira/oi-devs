@@ -1,0 +1,67 @@
+$cor-vermelha: red;
+$cor-azul: blue;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin criarCirculo($cor) {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: $cor
+}
+
+.circuloVermelho {
+  @include criarCirculo($cor-vermelha);
+}
+
+.circuloAzul {
+  @include criarCirculo($cor-azul);
+}
+
+section {
+  background-color: lightgray;
+
+  div {
+    background-color: red;
+  }
+}
+
+.banana {
+  height: 100px;
+  background-color: aquamarine;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: blueviolet;
+      text-decoration: underline;
+    }
+  }
+}
+
+section[id] {
+  border-bottom: 3px solid orange;
+  height: 100vh;
+
+  &:nth-child(odd) {
+    background-color: bisque;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  background-color: lightcoral;
+  padding: 5px;
+  color: #fff;
+  left: 0;
+  right: 0;
+}

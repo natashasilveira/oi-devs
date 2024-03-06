@@ -1,0 +1,45 @@
+[data-fruta="banana"] {
+  color: blue;
+}
+
+[data-fruta*="rosa"] {
+  color: lightsalmon;
+}
+
+[data-fruta~="rosa"] {
+  color: red;
+}
+
+[data-fruta^="abac"] {
+  color: purple;
+}
+
+[data-fruta$="ate"] {
+  color: green;
+}
+
+ul li:nth-child(4) {
+  color: yellow;
+}
+
+ul :first-child {
+  color:green;
+}
+
+ul :nth-child(6) {
+  color: pink;
+}
+
+ul p:nth-of-type(2) {
+
+}
+
+p::first-letter {
+  color: brown;
+}
+
+input:focus {
+  outline: 2px solid blue;
+  border: none;
+  background-color: red;
+}

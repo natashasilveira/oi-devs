@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial;
+}
+
+main {
+  display: flex;
+  max-width: 500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  align-items: center; /* Alinhamento vertical */
+  justify-content: center; /* Alinhamento horizontal */
+}
+
+input:not([type="checkbox"], [type="radio"]),
+button,
+textarea,
+select {
+  width: 100%;
+  min-height: 48px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid;
+  outline: none;
+  padding: 5px;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+  accent-color: blueviolet;
+}
+
+form {
+  width: 100%;
+}
+
+form fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section:last-child {
+  flex-direction: row;
+}
+
+button {
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(177, 129, 223);
+  cursor: pointer;
+}
+/* button:nth-child(1) {
+  flex: 2;
+}
+
+button:nth-child(2) {
+  flex: 1;
+} */
+
+button:first-child {
+  flex: 2;
+}
+
+button:last-child {
+  flex: 1;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h3 {
+  margin: 10px 0;
+  background-color: blueviolet;
+  color: white;
+}
+
+@media print {
+  label[for="tipo"], 
+  #tipo, 
+  .button-container {
+    display: none;
+  }
+} 
+
+/* section * {
+  flex: 1;
+} */

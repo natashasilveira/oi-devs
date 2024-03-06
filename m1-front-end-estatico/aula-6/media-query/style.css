@@ -1,0 +1,30 @@
+body {
+  background-color: lightcoral;
+}
+
+/* MOBILE FIRST */
+
+/*
+  celular - 480px - 768px
+  tablet - 768px - 1024px
+  maiores - 1024px - 1200px
+  enormes - 1200px +
+*/
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightslategray;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media print and (orientation: landscape) {
+  body {
+    background-color: aqua; 
+  }
+}
